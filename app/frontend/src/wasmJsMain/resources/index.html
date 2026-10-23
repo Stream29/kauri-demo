@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="referrer" content="no-referrer">
+    <title>Kauri</title>
+    <style>
+        html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #101714; }
+        #loading { color: #b5d9c3; font: 16px system-ui; padding: 48px; }
+    </style>
+    <script>
+        window.addEventListener("error", function (event) {
+            document.body?.setAttribute("data-kauri-smoke", "FAIL: " + event.message);
+        });
+        window.addEventListener("unhandledrejection", function (event) {
+            document.body?.setAttribute("data-kauri-smoke", "FAIL: " + String(event.reason));
+        });
+    </script>
+</head>
+<body>
+    <div id="loading">Kauri · Loading Compose Wasm…</div>
+    <script src="frontend.js"></script>
+</body>
+</html>

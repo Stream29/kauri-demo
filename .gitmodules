@@ -1,0 +1,12 @@
+[submodule ".agents/skills/shared-context-workflow"]
+	path = .agents/skills/shared-context-workflow
+	url = https://github.com/Stream29/shared-context-workflow-skill.git
+[submodule ".agents/skills/checklist-workflow"]
+	path = .agents/skills/checklist-workflow
+	url = https://github.com/Stream29/checklist-workflow-skill.git
+[submodule ".agents/skills/kanban-workflow"]
+	path = .agents/skills/kanban-workflow
+	url = https://github.com/Stream29/kanban-workflow-skill.git
+[submodule ".agents/skills/programmatic-planning"]
+	path = .agents/skills/programmatic-planning
+	url = https://github.com/Stream29/programmatic-planning-skill.git

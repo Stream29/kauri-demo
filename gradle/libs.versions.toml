@@ -1,0 +1,34 @@
+[versions]
+kotlin = "2.4.0"
+compose = "1.11.1"
+material3 = "1.9.0"
+rpc = "0.10.4"
+ktor = "3.3.0"
+serialization = "1.9.0"
+coroutines = "1.10.2"
+io = "0.8.0"
+browser = "0.3"
+binaryen = "125"
+
+[libraries]
+rpc-core = { module = "org.jetbrains.kotlinx:kotlinx-rpc-krpc-core", version.ref = "rpc" }
+rpc-client = { module = "org.jetbrains.kotlinx:kotlinx-rpc-krpc-ktor-client", version.ref = "rpc" }
+rpc-server = { module = "org.jetbrains.kotlinx:kotlinx-rpc-krpc-ktor-server", version.ref = "rpc" }
+rpc-json = { module = "org.jetbrains.kotlinx:kotlinx-rpc-krpc-serialization-json", version.ref = "rpc" }
+ktor-server = { module = "io.ktor:ktor-server-cio", version.ref = "ktor" }
+ktor-client = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
+serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-io = { module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "io" }
+browser = { module = "org.jetbrains.kotlinx:kotlinx-browser", version.ref = "browser" }
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose" }
+compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose" }
+compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "compose" }
+compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
+
+[plugins]
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+rpc = { id = "org.jetbrains.kotlinx.rpc.plugin", version.ref = "rpc" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
