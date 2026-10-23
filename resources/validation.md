@@ -1,13 +1,16 @@
 # Validation record
 
-## 2026-10-23 current candidate: English-only 0.1.0
+## 2026-10-23 current release: English-only 0.1.0 experimental preview
+
+- Published [Stream29/kauri-demo](https://github.com/Stream29/kauri-demo) publicly and [0.1.0](https://github.com/Stream29/kauri-demo/releases/tag/0.1.0) as a non-draft prerelease. The annotated tag points to English source commit b162783043b971fc253398b4527360299cc0c35a.
+- All nine attachments were downloaded from GitHub and compared byte-for-byte with staged artifacts. Archive checksums passed; each archive contains exactly one matching executable. A fresh public tag checkout restored all four submodules and matched every recorded source input. The later publication-record commit changes documentation only, not the immutable release tag.
 
 - First-party documentation is English. HTML language is en; the contract fixture uses English with emoji/accented Unicode rather than removing Unicode coverage.
 - Four release executables were actually linked again on Mac. Forced Native 14, pack 4/4, policy 12/12, Mac licenses CLI, seven HTTP security checks and interrupted/reopened exact-byte Wasm streaming passed.
 - Strict configuration-cache/incremental reuse passed. Build: 1m 3s, 91 tasks (22 executed / 69 up-to-date); repeat: 939ms, 6 executed / 85 up-to-date. These are warm build observations, not comparative application performance.
 - **GUI NOT RUN**: no owned graphical runner. Browser-context isolation, cleanup and real native policy/Canvas/kRPC/Flow require fresh target runs. Windows/Linux coverage is compilation/link/format/dependency audit, not CLI/GUI.
 - Bytes: Mac 17,043,248; Windows 19,701,760; Linux x64 18,801,520; Linux arm64 18,270,232.
-- Current candidate hashes/limits are in [0.1.0 notes](release-0.1.0.md), ignored build/review/english-release and the matching build/release/VALIDATION.txt. GitHub publication is tracked separately in the release Task Tree.
+- Release hashes/limits are in [0.1.0 notes](release-0.1.0.md), ignored build/review/english-release and the matching build/release/VALIDATION.txt. Completed work is recorded in kanban/done/2026-10-23-english-release.md.
 
 ## 2026-10-22 historical: fixed disposable browser contexts
 
