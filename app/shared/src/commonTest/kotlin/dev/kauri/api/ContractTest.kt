@@ -8,7 +8,7 @@ import kotlin.test.assertFailsWith
 class ContractTest {
     @Test
     fun noteRoundTripPreservesUnicode() {
-        val note = Note("Kauri 🌿\n你好，Native", "/app/note.txt")
+        val note = Note("Kauri 🌿\nHello, Native — café", "/app/note.txt")
         assertEquals(note, Json.decodeFromString<Note>(Json.encodeToString(note)))
     }
 
